@@ -1,0 +1,70 @@
+﻿@using CubeSummation.Models
+
+
+@{
+    ViewBag.Title = "Problem";
+}
+
+
+@model DataViewModel
+
+
+@using (Html.BeginForm("Problem", "Cube", FormMethod.Post))
+{
+    <br />
+    <div class="row">
+        <div class="col-md-12">
+            <p>Given a 3-D Matrix in which each block contains 0 initially. The first block is defined by the coordinate (1,1,1) and the last block is defined by the coordinate (N,N,N). There are two types of queries:</p>
+            <ul>
+                <li> UPDATE x y z W</li>
+            </ul>
+            <p>
+                Updates the value of block (x,y,z) to W.
+            </p>
+            <ul>
+                <li> QUERY x1 y1 z1 x2 y2 z2</li>
+            </ul>
+            <p>
+                Calculates the sum of the value of blocks whose x coordinate is between x1 and x2 (inclusive), y coordinate between y1 and y2 (inclusive) and z coordinate between z1 and z2 (inclusive).
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card mb-3" style="border-radius: 0.7rem; box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Input</label>
+                            @Html.TextAreaFor(Model => Model.Input, new { @class = "form-control", @rows = "6", @cols = "20" })
+                            @Html.ValidationMessageFor(Model => Model.Input, "", new { @class = "text-danger" })
+
+                        </div>
+                        <div class="col-md-6">
+                            <label>Output</label>
+                            @if (ViewBag.OutPut == "")
+                            {
+                                <textarea class="form-control" rows="5" cols="20" id="Output" disabled> </textarea>
+
+                            }
+                            else
+                            {
+                                <textarea class="form-control" rows="5" cols="20" id="Output" disabled> @ViewBag.OutPut</textarea>
+
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <input type="submit" class="btn btn-rounded btn-primary" value="Submit" />
+        </div>
+    </div>
+
+}
+

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubeSummation", "CubeSummation.csproj", "{FA6B58F8-B3E1-41F6-995A-EC0CD5CAA968}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA6B58F8-B3E1-41F6-995A-EC0CD5CAA968}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA6B58F8-B3E1-41F6-995A-EC0CD5CAA968}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA6B58F8-B3E1-41F6-995A-EC0CD5CAA968}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA6B58F8-B3E1-41F6-995A-EC0CD5CAA968}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C6299950-346E-43C2-8C9E-EB10A00857A3}
+	EndGlobalSection
+EndGlobal
